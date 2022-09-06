@@ -82,6 +82,7 @@ body{
   text-align: center;
   font-size:12px;
   margin-right:10px;
+  vertical-align: middle;
 }
 
 .circle.check, .check{
