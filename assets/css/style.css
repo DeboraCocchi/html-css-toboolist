@@ -4,6 +4,31 @@
   box-sizing: border-box;
 }
 
-h1{
-  color: red;
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  margin: 0 auto;
+  width: 60%;
+  max-width:1200px;
+}
+
+/* header */
+
+header div{
+  background-color: white;
+  padding:20px;
+}
+
+header img{
+  width:56px;
+  vertical-align: middle;
+}
+
+header span{
+  font-size: 40px;
+  font-weight: 900;
+  margin-left:10px;
+  vertical-align: middle; 
 }
