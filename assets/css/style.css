@@ -6,13 +6,7 @@
 
 body{
   font-family: 'Roboto', sans-serif;
-}
-
-.container{
-  margin: 20px auto;
-  width: 60%;
-  max-width:1200px;
-  background-color: white;
+  background-color: #F6F8F9;
 }
 
 /* header */
@@ -34,11 +28,15 @@ header span{
   vertical-align: middle; 
 }
 
-/* body */
+/* main */
 
-body{
-  background-color: #F6F8F9;
+.container{
+  margin: 20px auto;
+  width: 60%;
+  max-width:1200px;
+  background-color: white;
 }
+
 
 .btn-strip{
   border-bottom: 2px solid #F6F8F9;
@@ -47,20 +45,34 @@ body{
 
 .btn-strip button{
   padding:8px 15px;
-  border: 1px solid lightgrey;
   border-radius:8px;
   font-size:14px;
   margin-right:10px;
 }
 
+.btn-strip button:hover{
+  transform: scale(1.1);
+}
+
 #task-btn{
+  border: 1px solid #47ADF1;
   background-color: #47ADF1;
   color:white;
+}
+
+#task-btn:hover{
+  background-color: #215273;
 }
 
 #section-btn{
   background-color: white;
   color:lightgrey;
+  border: 1px solid lightgrey;
+}
+
+#section-btn:hover{
+  background-color: #cccccc;
+  color:white;
 }
 
 .tasks{
@@ -69,10 +81,27 @@ body{
   padding:20px;
 }
 
-.tasks div{
-  margin-top:12px;
-  font-size:120%;
+ul{
+  list-style: none;
 }
+
+ul h2::before{
+  content: '\25BE ';
+}
+
+.tasks h2{
+  font-size:130%;
+  margin-bottom: 20px;
+}
+
+.tasks li{
+  margin-bottom:20px;
+}
+
+.tasks li:last-child{
+  margin-bottom:30px;
+}
+
 .circle{
   display: inline-block;
   width: 18px;
@@ -103,26 +132,26 @@ body{
   vertical-align: middle;
 }
 
-.lightblue{
+.editorial{
   background-color: #47ADF1;
 }
 
-.violet{
+.q1{
   background-color:#9C72E4;
 }
 
-.darkgreen{
+.recruiting{
   background-color:#64C0A9;
 }
 
-.orange{
+.mobile{
   background-color:#F29E33;
 }
 
-.lightgreen{
+.sales{
   background-color:#B0C926;
 }
 
-.pink{
+.website{
   background-color:#D863A1;
 }
